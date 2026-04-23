@@ -2,11 +2,16 @@
 import React from 'react'
 import headerimg from '../Assets/Blog1.jpeg'
 import './Home.css';
-import { FaSquare } from "react-icons/fa";
+
+
+import PageTransition from '../componets/Page';
+
 
 
 const Home = () =>{
     return(
+      <PageTransition>
+        <>
     <header>
          <div className='container'>
 
@@ -14,13 +19,13 @@ const Home = () =>{
              <div className='col-md-6 col-lg-6'>
               <h5>We Provide All Health Care Solution</h5>
               <h2> Product Your Health And Take Care To Of Your Health</h2>
-              <button> <a href='#'> Read More</a></button>
+              <button> <a href='#about'> Read More</a></button>
               <span> + </span>
              </div>
              <div className='col-lg-6 col-md-6'>
                <div className='image-box'>
-                <img src={headerimg}/>
-                       <FaSquare />
+                <img alt='img Doc' src={headerimg}/>
+                       
                      
                    </div>
              </div>
@@ -36,6 +41,11 @@ const Home = () =>{
 
 
     </header>
+
+        
+         </>
+         </PageTransition> 
+
     )
 }
 

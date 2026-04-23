@@ -1,10 +1,9 @@
 
 import React from 'react';
 import Footerlogo from '../../Assets/logo2.jpeg'
-
-
 import { FaPhoneAlt ,FaLinkedin ,FaTwitter , FaFacebookSquare ,FaInstagramSquare  } from "react-icons/fa";
-
+import { Link } from 'react-router-dom';
+import './Footer.css'
 
 const Footer = () => {
 
@@ -31,27 +30,28 @@ const Footer = () => {
            <div className='col-md-3 col-sm-6'>
                  <h2> Quick Links</h2>
                  <ul>
-                  <li><a href='#'></a>Home</li>
-                   <li><a href='#'></a>About</li>
-                    <li><a href='#'></a>Blog</li>
-                     <li><a href='#'></a>Booking</li>
-                      <li><a href='#'></a>Faqs</li>
-                       <li><a href='#'></a>Our team</li>
-                        <li><a href='#'></a>Services</li>
+                  <Link  className='sho' to="/" >Home</Link>
+                    <Link className='sho' to="/aboutus" ><li>About</li></Link>
+                    <Link className='sho' to="/blog"><li>Blog</li></Link>
+                   <Link className='sho' to="/booking"  > <li>Booking</li></Link>
+                     <Link className='sho' to="/faqs" > <li>Faqs</li> </Link> 
+                    <Link className='sho' to="/ourteam" > <li>Our team</li></Link>
+                      <Link className='sho' to="/Info" > <li>Info</li></Link>
+
 
                  </ul>
            </div>
            <div className='col-md-3 col-sm-6'>
                <h2> Our Services</h2>
                  <ul>
-                  <li><a href='#'></a>Dental Care</li>
-                   <li><a href='#'></a>Cardiac Clinic</li>
-                    <li><a href='#'></a>Massege Therapy</li>
-                     <li><a href='#'></a>Cardiology</li>
-                      <li><a href='#'></a>Precise Diagnosis</li>
-                       <li><a href='#'></a>Abmbulance Service</li>
-                        <li><a href='#'></a>Services</li>
-
+                                      <Link  className='sho' ><li><a href='#'></a>Dental Care</li> </Link>
+                                      <Link  className='sho'><li><a href='#'></a>Cardiac Clinic</li></Link>
+                                        <Link  className='sho' ><li><a href='#'></a>Massege Therapy</li></Link>
+                                       <Link  className='sho'><li><a href='#'></a>Cardiology</li></Link>
+                                          <Link  className='sho' ><li><a href='#'></a>Precise Diagnosis</li></Link>
+                                           <Link  className='sho'><li><a href='#'></a>Abmbulance Service</li></Link>
+                                          <Link  className='sho' to="/services" > <li>Services</li></Link>
+                                          
                  </ul>
 
            </div>
@@ -63,12 +63,14 @@ const Footer = () => {
               <button type='submit'>Subscribe now</button>
             </form>
             <ul className='social'>
-              <li><a href='#'> <FaLinkedin/></a></li>
-              <li><a href='#'> <FaTwitter/></a></li>
-              <li><a href='#'> < FaFacebookSquare/></a></li>
-               <li><a href='#'> < FaInstagramSquare /></a></li>
+                                  <Link> <li><a href='#'></a> <FaLinkedin/></li> </Link>
+                                  <Link> <li> <a href='#'></a> <FaTwitter/></li></Link>
+                                  <Link> <li> <a href='#'></a> < FaFacebookSquare/></li></Link>
+                                  <Link>  <li> <a href='#'></a>  < FaInstagramSquare /></li></Link>
 
             </ul>
+            
+            
            </div>
          </div>
         </div>

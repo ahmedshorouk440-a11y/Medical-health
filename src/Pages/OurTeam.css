@@ -1,0 +1,133 @@
+
+/* ===== Header ===== */
+.team-header {
+  height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1200');
+  background-size: cover;
+  background-position: center;
+}
+
+.team-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.team-header p {
+  font-size: 18px;
+}
+
+/* ===== Team Card ===== */
+.team-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  /* شيلنا أي transition أو scale */
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== Info ===== */
+.team-info {
+  padding: 15px;
+}
+
+.team-info h5 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-info p {
+  color: #777;
+}
+
+/* ===== Social Icons ===== */
+.social-icons i {
+  margin: 5px;
+  cursor: pointer;
+  color: #565acf;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #333;
+}
+
+/* ===== Stats ===== */
+.stats-section {
+  background: #565acf;
+  color: #fff;
+}
+
+.stats-section h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* ===== Why Section ===== */
+.why-section {
+  background: #f5f7ff;
+}
+
+.why-box {
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.why-box:hover {
+  background: #f8f9fa;
+  transform: translateY(-5px);
+}
+
+.why-box i {
+  font-size: 40px;
+  color: #565acf;
+}
+
+/* ===== Testimonials ===== */
+.testimonial-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== CTA ===== */
+.cta-section {
+  background: #565acf;
+  color: #fff;
+}
+
+.cta-section button {
+  margin-top: 30px;
+  border-radius: 8px;
+  
+  background: #565acf;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.cta-section button:hover {
+  background: var(--orange-color);
+  letter-spacing: 2px;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+

@@ -116,18 +116,4 @@ header button:hover{
 }
 
 
-header svg{
-    color: var(--btn-color);
-    font-size: 80px;
-    position: absolute;
-   left: 0%;
-   top: 10%;
-   
-    animation: mover 1s infinite alternate; 
-    -moz-animation: mover 1s infinite alternate;
-    -webkit-animation:  mover 1s infinite alternate ;
-    -o-animation:  mover 1s infinite alternate;
-  
-    
-}
 

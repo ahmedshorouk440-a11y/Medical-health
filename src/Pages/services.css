@@ -1,0 +1,52 @@
+
+/* ===== Card Style ===== */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ===== Services Title ===== */
+.services-intro {
+  font-size: 24px;
+  font-weight: 700;
+  color: #565acf;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .services-intro {
+    font-size: 20px;
+  }
+}
+
+/* ===== Button Style ===== */
+.nnn {
+  background: linear-gradient(135deg, #565acf, #8a78f0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px;
+  padding-bottom: 5px !important;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+   box-shadow: transform 0.3s ease;
+     background: transform 0.3s ease;
+    box-shadow: 0 5px 12px rgba(86, 90, 207, 0.25);
+}
+
+/* ===== Button Hover ===== */
+.nnn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 18px rgba(86, 90, 207, 0.35);
+  background: linear-gradient(135deg, #8a78f0, #565acf);
+}

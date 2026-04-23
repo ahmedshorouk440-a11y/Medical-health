@@ -3,12 +3,14 @@ import React, { Fragment } from "react";
 import Navbar from "../Nav/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from '../Footer/Footer'
+import ScrollToTop from '../../Pages/ScrollToTop';
 
 const Layout  =()=>{
     return(
         <Fragment>
            <Navbar/>
            <main>
+            <ScrollToTop/>
             <Outlet/>
            </main>
 

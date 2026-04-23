@@ -10,12 +10,17 @@ import { FaWhatsapp } from "react-icons/fa6";
 import './contact.css';
 import FormContact from "./FormContact";
 
+import PageTransition from '../componets/Page';
+
 const Contact = () =>{
 
 
     return(
+      <PageTransition>
+       
      <>
-     <Banner title="Contact" smtitle="contact" />
+
+     <Banner title="Contact us" smtitle="contact us" />
      <section className="contact-us">
         <div className="container">
           <div className="row">
@@ -49,6 +54,7 @@ const Contact = () =>{
         </div>
      </section>
      </>
+      </PageTransition>
     )
 }
 export default Contact;

@@ -1,0 +1,86 @@
+
+/* ===== Page Background ===== */
+.research-page {
+  min-height: 100vh;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #f5f7ff, #eef1ff);
+}
+
+/* ===== Search Box Wrapper ===== */
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;   /* 👈 ده المارجن قبل البحث */
+  transition: all 0.4s ease;
+}
+
+/* لما يبدأ البحث المارجن يقل */
+.search-wrapper.active {
+  margin-top: 20px;
+}
+
+/* ===== Title ===== */
+.research-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2b2b2b;
+}
+
+/* ===== Input ===== */
+.search-input {
+  width: 50%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.search-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 10px rgba(108,99,255,0.3);
+}
+
+/* ===== Suggestions Box ===== */
+.suggestions-box {
+  width: 50%;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.suggestion-item:hover {
+  background: #f0f0ff;
+}
+
+/* ===== Cards ===== */
+.research-card {
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== No Result ===== */
+.no-result {
+  text-align: center;
+  color: #ff4d4d;
+  font-size: 18px;
+  margin-top: 20px;
+}

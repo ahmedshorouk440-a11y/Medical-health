@@ -1,0 +1,69 @@
+
+/* Banner */
+.blog-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("https://images.unsplash.com/photo-1579684385127-1ef15d508118") center/cover;
+  height: 300px;
+}
+
+.blog-banner h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.blog-banner p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Search */
+.search-box {
+  margin-top: -40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Card */
+.blog-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.blog-card img {
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+.blog-card h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.blog-card button {
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.blog-card button:hover {
+  letter-spacing: 1px;
+}
+Link{
+  color:#fff;
+   background-color: var(--main-color);
+}
